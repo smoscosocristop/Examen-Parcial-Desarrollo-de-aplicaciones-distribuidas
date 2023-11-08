@@ -57,8 +57,13 @@ function PropiedadesForm() {
         <label className='block mb-2 text-sm font-medium text-gray-900' htmlFor="estado">
           Estado
         </label>
-        <input type="text" name="estado" onChange={handleChange} className='bg-green-100 border border-green-300
-             text-gray-900 text-xs rounded-lg block w-full p-2.5' placeholder="Input estado" />
+        <select name="estado" onChange={handleChange} className='bg-green-100 border border-green-300
+             text-gray-900 text-xs rounded-lg block w-full p-2.5'>
+          <option value="">Seleccione estado</option>
+          <option value="Libre">Libre</option>
+          <option value="Ocupada">Ocupada</option>
+          <option value="Mantenimiento">Mantenimiento</option>
+        </select>
 
         <label className='block mb-2 text-sm font-medium text-gray-900' htmlFor="precioalquiler">
           Precio de alquiler
