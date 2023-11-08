@@ -5,10 +5,11 @@ import axios from 'axios'
 
 function PropiedadesForm() {
   const [propiedades, setPropiedades] = useState({
-    barcode: "",
-    name: "",
-    price: "",
-    description: ""
+    nombre: "",
+    direcion: "",
+    caracteristicas: "",
+    estado: "",
+    precioalquiler: ""
   });
 
   const handleChange = (e) => {
